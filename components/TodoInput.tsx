@@ -3,13 +3,13 @@ import { StyleSheet, Text, View, TextInput } from "react-native";
 import { AppButton } from "./AppButton";
 import { colors } from "../assets/theme";
 
-export function TodoInput({ onAddTodo }) {
+export function TodoInput({ onAddTodo }: { onAddTodo: (todo: string) => void }) {
   // TODO (state): replace this with a useState hook so the TextInput is
-  const [enteredTodo, setEnteredTodo] = useState("");
+  const [enteredTodo, setEnteredTodo] = useState("placeholder Text");
   // const enteredTodo = "placeholder Text";
 
   // TODO (state): update enteredTodo with the text the user typed.
-  const inputHandler = (text) => {
+  const inputHandler = (text: string) => {
     setEnteredTodo(text);
   };
 

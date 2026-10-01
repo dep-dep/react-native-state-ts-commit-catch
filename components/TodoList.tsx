@@ -5,8 +5,6 @@ import { colors } from "../assets/theme";
 type Todo = {
   id: string;
   title: string;
-  description: string;
-  onDeleteItem: (id: string) => void;
 };
 
 type TodoListProps = {

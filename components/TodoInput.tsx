@@ -9,11 +9,10 @@ type TodoInputProps = {
 
 export function TodoInput({ onAddTodo }: TodoInputProps) {
   // TODO (state): replace this with a useState hook so the TextInput is
-  const [enteredTodo, setEnteredTodo] = useState("placeholder Text");
+  const [enteredTodo, setEnteredTodo] = useState("");
   // const enteredTodo = "placeholder Text";
 
   // TODO (state): update enteredTodo with the text the user typed.
-  const inputHandler = (text: string) => {
   const inputHandler = (text: string) => {
     setEnteredTodo(text);
   };

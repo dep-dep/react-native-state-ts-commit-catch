@@ -1,6 +1,6 @@
 import { Pressable, StyleSheet, Text } from "react-native";
 import { colors } from "../assets/theme";
-
+// This is a app button component that can be used in the app to create a button with a text and an onPress function
 export function AppButton({
   text,
   onPress,
